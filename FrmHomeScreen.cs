@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Technical_Equipment_Supplier
 {
-    public partial class FrmLoginScreen : Form
+    public partial class FrmHomeScreen : Form
     {
-        public FrmLoginScreen()
+        public FrmHomeScreen()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRequest frmRequest = new FrmRequest();
+            frmRequest.ShowDialog();
         }
     }
 }

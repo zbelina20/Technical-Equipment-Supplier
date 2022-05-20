@@ -7,9 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DBLayer;
 
 namespace Technical_Equipment_Supplier
 {
+
+
     public partial class FrmLogin : Form
     {
         string username = "nastavnik";
@@ -36,6 +39,10 @@ namespace Technical_Equipment_Supplier
                 {
                     MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmHomeScreen frmHomeScreen = new FrmHomeScreen();
+                    Hide();
+                    frmHomeScreen.ShowDialog();
+                    Close();
                 }
                 else
                 {

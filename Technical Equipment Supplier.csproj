@@ -56,19 +56,28 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLoginScreen.cs">
+    <Compile Include="FrmHomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLoginScreen.Designer.cs">
-      <DependentUpon>FrmLoginScreen.cs</DependentUpon>
+    <Compile Include="FrmHomeScreen.Designer.cs">
+      <DependentUpon>FrmHomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRequest.Designer.cs">
+      <DependentUpon>FrmRequest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLoginScreen.resx">
-      <DependentUpon>FrmLoginScreen.cs</DependentUpon>
+    <EmbeddedResource Include="FrmHomeScreen.resx">
+      <DependentUpon>FrmHomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRequest.resx">
+      <DependentUpon>FrmRequest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,7 +101,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="DLLs\DBLayer.dll" />
   </ItemGroup>
